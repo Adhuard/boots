@@ -158,6 +158,10 @@ a{
     align-items: center;
     gap: 18px;
 }
+.header-menu.left{
+    margin-right: 223px; /*что бы лого встало в середину*/
+}
+
 @media(max-width: 430px){
     .header-action__menu{
         display: flex;
@@ -183,8 +187,12 @@ a{
     align-items: center;
    }
 }
-@media(max-width: 400px){}
-
+@media(max-width: 870px){
+    .header-menu.left{
+        display: flex;
+        margin-right: 1px;
+    }
+}
 
 
 h1{
@@ -259,4 +267,3 @@ padding: 16px 32px;
         font-size: 24px;
     }
 }
-.container{}
