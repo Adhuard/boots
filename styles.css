@@ -100,11 +100,10 @@ legend {
     --color-fill: #FFFFFF;
     --color-dark-blue: #212A2F;
     --border-radius: 2px;
-    --font-family-base:"roboto", sans-serif;
 }
 
 body{
-    font-family: var(--font-family-base);
+    font-family: "roboto";
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
@@ -171,7 +170,12 @@ a{
         flex-wrap: wrap;
     }
     .header-action{
+        display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
+        align-items: start;
+        gap:12px;
+        margin-top: 5px;
     }
    .header-menu{
     display: flex;
@@ -180,3 +184,78 @@ a{
    }
 }
 @media(max-width: 400px){}
+
+
+
+h1{
+    font-size: 48px;
+    letter-spacing: 0.01em;
+    color: var(--color-fill);
+
+}
+
+.tooltip-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 740px;
+    background: url(./image/tooltip-background.png);
+   
+}
+.tooltip-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 321px;
+   
+}
+
+.tooltip-paragraph{
+    color: var(--color-fill);
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    margin-top: 11px;
+
+}
+
+.tooltip-menu{
+    display: flex;
+    gap:24px;
+    padding-bottom: 56px;
+
+}
+
+.tooltip-link__left{
+    font-size: 14px;
+    border-radius: var(--border-radius);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    background-color:var(--color-fill);
+    padding: 16px 45.5px;
+}
+
+.tooltip-link__right{
+font-size: 14px;
+border-radius: var(--border-radius);
+letter-spacing: 0.14em;
+text-transform: uppercase;
+background-color:var(--color-fill);
+padding: 16px 32px;
+}
+@media(max-width: 1024px){
+    .tooltip-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .tooltip-info{
+        padding-top: 18px;
+        margin-bottom: 11px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+}
