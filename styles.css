@@ -267,3 +267,128 @@ padding: 16px 32px;
         font-size: 24px;
     }
 }
+
+.favorites-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 778px;
+    margin-top: 120px;
+    background-color: var(--color-fill);
+}
+
+h2{
+    font-size: 32px;
+    letter-spacing: 0.02em;
+}
+.favorites-heading{
+    padding-bottom: 32px;
+}
+
+.favorites-menu{
+    padding-bottom: 12px;
+}
+.favorites-list{
+    display: flex;
+    justify-content: center;
+    column-gap: 132px;
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+}
+
+
+
+.favorites-link__active{
+    border-bottom:#212f21;
+}
+
+
+
+
+
+.favorites-border-bottom{
+    background-color: #d3d4d5;
+    width: 1236px;
+    height: 2px;
+}
+
+.favorites-product{
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    padding-top: 34px;
+}
+.favorites-product__card_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 396px;
+    height: 396px;
+    background: url(./image/favorites-product-1.png)
+}
+.favorites-product__card_2{
+    width: 396px;
+    height: 396px;
+    background: url(./image/favorites-product-2.png);
+}
+.favorites-product__card_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 396px;
+    height: 396px;
+    background: url(./image/favorites-product-3.png);
+}
+.favorites-product__link_men{
+    padding: 16px 93px;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    background-color: var(--color-fill);
+    border-radius: var(--border-radius);
+
+}
+.favorites-product__link_women{
+    padding: 16px 80px;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    background-color: var(--color-fill);
+    border-radius: var(--border-radius);
+}
+
+.favorites-product__description{
+    display: flex;
+    flex-direction: column;
+    padding-top: 18px;
+    padding-left: 30px;
+    gap: 10px;
+}
+.favorites-product__heading{
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    
+    }
+    .favorites-product__liniya_little{
+        width: 336px;
+        height: 1px;
+        background: #d3d4d5;
+    }
+.favorites-product__paragraph_svg{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 22px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+}
