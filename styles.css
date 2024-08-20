@@ -208,7 +208,7 @@ h1{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 740px;
+    
     background: url(./image/tooltip-background.png);
    
 }
@@ -273,7 +273,8 @@ padding: 16px 32px;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    height: 778px;
+    flex-wrap: wrap;
+    
     margin-top: 120px;
     background-color: var(--color-fill);
 }
@@ -298,14 +299,48 @@ h2{
     text-transform: uppercase;
 
 }
+/*.favorites-link{
+    display: flex;
+    flex-wrap: nowrap;}*/
 
 
 
-.favorites-link__active{
-    border-bottom:#212f21;
+.favorites-section__menu{
+    flex-wrap: wrap;
+}
+.favorites-product{
+    flex-wrap: wrap;
 }
 
+.favorites-item1{ /*позиционирование нижней линии */
+    position: relative;
+}
+.favorites-item1::after{ /*позиционирование нижней линии */
+    content: "";
+    position:absolute;
+    
+    width: 8.54vw;
+    height: 2px;
+    left: 50%;
+    bottom:-65%;
+    transform: translateX(-50%);
+    background: #000;
+    }
 
+.favorites-item2{
+    position: relative;
+}
+.favorites-item2::after{
+    content: "";
+    position: absolute;
+    width: 85.8vw;
+    height: 2px;
+    bottom:-75% ;
+    left:50%;/*получилось центрировать (ответы)*/
+    transform: translateX(-50%);/* как центрировать?*/
+    /*transform: translateX(-50%); ведет отсчёт после элемента (after), поэтому вылезает за пределы*/
+    background: #d3d4d5;
+}
 
 
 
@@ -376,7 +411,7 @@ h2{
     letter-spacing: 0.02em;
     
     }
-    .favorites-product__liniya_little{
+.favorites-product__liniya_little{
         width: 336px;
         height: 1px;
         background: #d3d4d5;
@@ -391,4 +426,15 @@ h2{
     font-size: 14px;
     letter-spacing: 0.03em;
 
+}
+@media(max-width: 1205px){
+    .favorites-heading{
+       /* display: flex;
+        flex-basis:100%;*/
+    }
+}
+@media(max-width:500px){
+    .favorites-menu{
+        padding-inline: 15px;
+    }
 }
