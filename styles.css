@@ -163,6 +163,10 @@ a{
 }
 
 @media(max-width: 430px){
+
+    .header a{
+        font-size: 17px;
+    }
     
     .header-container{
         justify-content: start;
@@ -458,12 +462,7 @@ h2{
     letter-spacing: 0.03em;
 
 }
-@media(max-width: 1205px){
-    .favorites-heading{
-       /* display: flex;
-        flex-basis:100%;*/
-    }
-}
+
 @media(max-width:1024px){
     .header-logo{
         display: flex;
@@ -498,6 +497,6 @@ h2{
         height: 300px;
     }
     .favorites-product__liniya_little{
-        width: 300px;
+        width: 250px;
     }
 }
