@@ -293,7 +293,7 @@ h2{
 .favorites-list{
     display: flex;
     justify-content: center;
-    column-gap: 132px;
+    column-gap: 7vw;
     font-size: 16px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -433,8 +433,17 @@ h2{
         flex-basis:100%;*/
     }
 }
-@media(max-width:500px){
-    .favorites-menu{
-        padding-inline: 15px;
+@media(max-width:1024px){
+    .favorites-section__menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .favorites-product{
+        justify-content: center;
+        align-items: center;
+    }
+    .favorites-container{
+        margin-top: 18px;
     }
 }
