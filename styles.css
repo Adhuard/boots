@@ -624,8 +624,32 @@ padding: 16px 32px;
     background-color: var(--color-dark-blue);
     margin-bottom: 120px;
 }
-
+.new-product-container{
+    margin-bottom: 120px;
+}
 .new-product__paragraph{
     margin-top: 8px;
     margin-left: 18px;
+}
+
+.eco-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 120px;
+    gap: 24px;
+}
+.eco-info__paragraph{
+    text-align: center;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+}
+.eco-info__link{
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: var(--color-dark-blue);
+    color: var(--color-fill);
+    padding: 16px 54px;
 }
