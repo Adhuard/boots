@@ -557,6 +557,9 @@ padding: 16px 32px;
     width: 100%;
     margin: 0 auto;
 }
+.wrapper-heading{
+    margin-bottom: 24px;
+}
 .slider{
     position: relative;
 }
@@ -594,4 +597,35 @@ padding: 16px 32px;
     margin-top: 17px;
     margin-left: 18px;
     margin-bottom: 18px;
+}
+
+.fabric-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+}
+.fabric-heading{
+    margin-bottom: 22px;
+}
+.fabric-paragraph{
+    text-align: center; /* выравнил параграф с br*/
+    line-height: 150%;
+    margin-bottom: 26px;
+    
+}
+.fabric-link{
+    color: var(--color-fill);
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 16px 154px;
+    background-color: var(--color-dark-blue);
+    margin-bottom: 120px;
+}
+
+.new-product__paragraph{
+    margin-top: 8px;
+    margin-left: 18px;
 }
