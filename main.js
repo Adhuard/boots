@@ -9,5 +9,4 @@ $(document).ready(function () {
     $(".slick-prev").text(">");
     $(".slick-next").text(">");
 
-
 })
