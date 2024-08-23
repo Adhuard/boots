@@ -97,6 +97,7 @@ legend {
     --color-fill: #FFFFFF;
     --color-dark-blue: #212A2F;
     --border-radius: 2px;
+    --font-weight: 400;
 }
 
 body{
@@ -112,6 +113,24 @@ body{
 a{
     color: var(--color-dark-blue);
 }
+h1{
+    font-size: 48px;
+    font-weight: var(--font-weight);
+    letter-spacing: 0.01em;
+    color: var(--color-fill);
+
+}
+h2{
+    font-weight: var(--font-weight);
+    font-size: 32px;
+    letter-spacing: 0.02em;
+}
+h3{
+    font-size: 22px;
+    font-weight: var(--font-weight);
+    letter-spacing: 0.02em;
+}
+
 
 .container{
     max-width: 1440px;
@@ -212,14 +231,6 @@ a{
     }
 }
 
-
-h1{
-    font-size: 48px;
-    letter-spacing: 0.01em;
-    color: var(--color-fill);
-
-}
-
 .tooltip-container{
     display: flex;
     flex-direction: column;
@@ -312,10 +323,7 @@ padding: 16px 32px;
     background-color: var(--color-fill);
 }
 
-h2{
-    font-size: 32px;
-    letter-spacing: 0.02em;
-}
+
 .favorites-heading{
     padding-bottom: 32px;
 }
@@ -543,4 +551,47 @@ h2{
     .favorites-product{
         margin-bottom: 0px;
     }
+}
+
+.container-wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+.slider{
+    position: relative;
+}
+.slider-wrapper__item{  
+    margin: 0px 12px; /*24px по макету, но не происходит схлопывания */
+
+}
+.slider-wrapper .slick-arrow{ /* по общему классу+абсолют позиционированны в одном месте*/
+    position: absolute;
+    bottom: 40%;
+    font-size: 50px;
+    padding: 10px 10px;
+    background-color: var(--color-fill);
+    color: #4d5559;
+    border: 1px solid #000;
+    cursor: pointer; /*рука при наведении*/
+    opacity: 0.5;
+}
+.slider-wrapper .slick-arrow:hover{
+    opacity: 1;
+   /* transform: scale(1.2); увеличение размера */
+    transition-delay:0.1s;
+    
+}
+.slider-wrapper .slick-prev{ /*по индивидуальному классу разделены друг от друга */
+    left: 48px; /* 48 от левой стороны блока */
+    transform: rotate(180deg); /*заркально отражаеt стрелку*/
+    z-index:11;
+}
+.slider-wrapper .slick-next{
+    right: 48px; /* 48 от правой стороны блока */
+    z-index:11;
+}
+.slider-wrapper__heading{
+    margin-top: 17px;
+    margin-left: 18px;
+    margin-bottom: 18px;
 }
